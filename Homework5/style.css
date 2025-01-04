@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Pacifico&display=swap');
+
+p {
+   
+    color: brown;
+    font-size: 50px;
+    font-family: "Monsieur La Doulaise";
+    font-weight: 400;
+  font-style: normal;
+  border: 15px solid orange;
+  border-radius: 30px;
+  text-align: center;
+  margin: 35px;
+
+}
+h1 {
+    color: brown;
+    font-size: 50px;
+    font-family: "Monsieur La Doulaise";
+    font-weight: 400;
+  font-style: normal;
+  border: 15px solid orange;
+  border-radius: 30px;
+  text-align: center;
+  margin: 35px;
+
+}
