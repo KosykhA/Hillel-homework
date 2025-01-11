@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+}
+.container {
+    
+    display: flex;
+    width: 100%;
+}
+
+.sidebar-menu {
+    width: 20%;
+    background: #fbfbfb;
+    padding: 10px;
+
+}
+h2.sidebar-menu {
+    font-size: 18px;
+}
+ul.sidebar-menu {
+    padding: 0;
+    /* list-style: none; */
+}
+ul li.sidebar-menu {
+    margin-bottom: 5px;
+}
+
+a li ul.sidebar-menu {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+main {
+    width: 80%;
+    padding: 10px;
+}
+.top-bar {
+    background: #dbedd4;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #38933c;
+    
+
+}
+p.color-bar {
+    color: black;
+    font-size: 10px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+.product-card {
+    text-align: center;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    background: #ffffff;
+}
