@@ -1,10 +1,22 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/Fonts/Fontspring-DEMO-cerapro-regular.otf") format("OpenType");
+}
+
+body {
+    font-family: "Cera Pro";
+}
 h1 {
     text-align: center;
     margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    
 }
 p {
     text-align: center;
     margin-bottom: 15px;
+    color: #767272;
 }
 .top-boxes {
     max-width: 1202px;
@@ -39,7 +51,7 @@ p {
 .box-content p {
 font-size: 13px;
 margin-bottom: 15px;
-color: rgb(52, 51, 51);
+color: rgb(107, 105, 105);
 text-align: right;
 }
 .box-content a {
@@ -48,7 +60,7 @@ text-align: right;
     font-weight: bold;
     color: white;
     padding: 5px;
-    background: rgb(36, 163, 36);
+    background: rgb(60, 185, 60);
     border: 1px solid rgb(59, 171, 59);
     border-radius: 4px;
 }
@@ -67,3 +79,56 @@ text-align: right;
                                     
 /* Foot-img */
 
+
+.foot {
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+
+}
+.foot-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 15px;
+    
+
+    max-width: 1202px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(194, 189, 189);
+    
+}
+.foot-box {
+    display: flex;
+    flex-direction: column;
+    
+
+   
+    width: 250px;
+    gap: 10px;
+    padding: 15px;
+}
+.blog-box {
+   
+   padding: 5px;
+    
+}
+.blog-box h4 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+.blog-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #767272;
+
+}
+.blog-box a {
+    text-decoration: none;
+    color: rgb(48, 174, 48);
+    font-weight: bold;
+}
