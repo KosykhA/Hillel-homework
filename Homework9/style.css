@@ -1,0 +1,132 @@
+body {
+    font-family: "Montserrat";
+    background-color: azure;
+    color: #000;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+   margin-left: 105px;
+    
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2f2929d9;
+    font-weight: 600;
+    
+  
+    
+}
+.nav-links a.active {
+    border-bottom: 2px solid #00a86b;
+    color: #00a86b;
+}
+.sort {
+    display: flex;
+    align-items: center;
+    margin-right: 107px;
+}
+.sort label {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+#sort-options {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    
+  
+    .product-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    align-items: center;
+    flex: 1;
+    
+       
+    }
+}
+.product-card {
+    flex: 1;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 15px;
+    
+    background-color: #fff;
+    position: relative;
+    
+    
+    
+
+}
+
+.product-card img {
+    max-width: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.product-card .price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00a86b;
+
+}
+
+.product-card .old-price {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.product-card .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #00a86b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.product-card.highlighted {
+    border: 2px solid #00a86b;
+}
+.product-card.highlighted .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.product-card.highlighted .actions a img {
+    width: 20px;
+    height: 20px;
+}
