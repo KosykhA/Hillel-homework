@@ -1,0 +1,162 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    height: 40px;
+
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    
+}
+
+.menu {
+    flex-grow: 1;
+}
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    
+}
+.menu-list li {
+    position: relative;
+    margin: 0 15px;
+}
+.menu-list a {
+    font-weight: bolder;
+    color: #6a6969;
+    padding: 10px 15px;
+}
+.dropdown a {
+    color: #000000;
+}
+
+
+.menu-list a:hover {
+    color: #28a745;
+}
+
+
+.dropdown .dropdown-menu {
+    position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+ border: 1px solid #ddd;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ padding: 10px 0;
+ z-index: 10;
+ min-width: 150px;
+ 
+ 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+   
+    background-color: #f0f0f0;
+   
+    gap: 5px;
+}
+.dropdown-menu li {
+    padding: 5px 2px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #28a745;
+}
+
+.dropdown-right {
+    position: relative;
+}
+
+.dropdown-right .dropdown-menu-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    
+}
+.dropdown-right:hover .dropdown-menu-right {
+    display: block;
+    background-color: #f0f0f0
+}
+.dropdown-menu-right li {
+    padding: 5px 2px;
+}
+.dropdown-menu-right li a:hover {
+    
+    color: #28a745;
+   
+}
+
+.login-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    max-width: 150px;
+}
+.login-btn:hover {
+    background-color: #218838;
+}
