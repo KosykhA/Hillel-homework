@@ -1,0 +1,173 @@
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 20px;
+   margin: 0 auto;
+   max-width: 1200px;
+   background: white;
+}
+.section-nav {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.logo {
+    
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+@keyframes linkNav {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+    animation-name: linkNav;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: -5px;
+    background-color: #2e7d32;
+    transition: width 0.3s, left 0.3s;
+}
+.navbar ul li a:hover {
+    color: #2e7d32;
+    
+}
+.navbar ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.section-nav {
+    position: relative;
+}
+
+@keyframes button_Animatiom {
+    0% { transform: scale(1); background: #2e7d32; }
+    50% { transform: scale(1.05); background: #205f25;}
+    100% { transform: scale(1.); background: #2e7d32;}
+}
+
+
+.login-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+
+}
+.login-btn:hover {
+    position: absolute;
+    background:  #1b5e20;
+    animation-name: button_Animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+.hero-text {
+    max-width: 500px;
+}
+
+.subheading {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.green {
+    color: #2e7d32;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin: 20px 0;
+}
+@keyframes button_Shop {
+    0% { transform: scale(1); background: #2e7d32; }
+    50% { transform: scale(1.05); background: #205f25;}
+    100% { transform: scale(1.); background: #2e7d32;}
+
+}
+
+.shop-btn {
+    background: #2e7d32;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    transition: 0.3s;
+
+}
+
+.shop-btn:hover {
+animation-name: button_Shop;
+animation-duration: 0.6s;
+animation-timing-function: step-end;
+animation-fill-mode: forwards;
+}
+
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+}
