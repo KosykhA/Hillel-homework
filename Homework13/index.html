@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset.css" />
+    <title>AnimationCheckbox</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="toggle" class="class-checkbox" />
+        <div class="custom-checkbox">
+          <label for="toggle" class="toggle-ball"> </label>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .wrapper {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background: #f1efef;
+      }
+
+      .class-checkbox {
+        opacity: 0;
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        z-index: 3;
+      }
+      .checkbox-wrapper {
+        position: relative;
+      }
+
+      .custom-checkbox {
+        width: 80px;
+        height: 40px;
+        background: #aaa8a8;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .custom-checkbox::before {
+        content: "";
+        display: none;
+        position: absolute;
+        background-color: #1e90ff;
+        cursor: pointer;
+        width: 40px;
+        height: 20px;
+
+        border-radius: 40px;
+      }
+      .toggle-ball {
+        width: 34px;
+        height: 34px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 3px;
+        cursor: pointer;
+      }
+
+      .class-checkbox:checked ~ .custom-checkbox::before {
+        display: block;
+      }
+
+      .class-checkbox:checked + .custom-checkbox {
+        background: #1e90ff;
+      }
+
+      .class-checkbox:checked + .custom-checkbox .toggle-ball {
+        left: 43px;
+      }
+    </style>
+  </body>
+</html>
