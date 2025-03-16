@@ -1,0 +1,158 @@
+
+.up {
+    background: linear-gradient(to bottom left, #323264, #323264, #643E72);
+}
+.container-head {
+    /* width: 90%; */
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service img {
+    width: 50px;
+}
+
+.testimonial {
+    padding: 50px 0;
+    text-align: center;
+    
+    color: #222;
+
+}
+
+.testimonial img {
+    width: 100px;
+    text-align: center;
+
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.partners {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.item-img {
+    
+    width: 360px;
+    height: 120px;
+    
+   
+}
+
+.partners-grid img {
+   width: 120px;
+}
+
+.item-img1 {
+    background: #1C4280;
+}
+
+.item-img2 {
+    background: #143646;
+}
+.item-img3 {
+    background: #F48B30;
+}
+.item-img4 {
+    background: #9E4DC3;
+}
+.item-img5 {
+    background: #FD9339;
+}
+.item-img6 {
+    background: #E2E2E4;
+}
+.item-img7 {
+    background: #C71C36;
+}
+.item-img8 {
+    background: #DCF3F9;
+}
+.item-img9 {
+    background: #EAEAEA;
+}
+.item-img10 {
+    background: #282240;
+}
+.item-img11 {
+    background: #1D4568;
+}
+.item-img12 {
+    background: #000000;
+}
