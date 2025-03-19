@@ -157,16 +157,43 @@
       </section>
     </section>
 
-    <section class="testimonial">
-      <div class="container">
-        <div class="testimonial-content">
-          <img src="" alt="Team Member" class="team" />
-          <p>
-            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
-            вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-          </p>
+    <section class="team-carousel">
+        <div class="team-carousel__container">
+            <div class="team-carousel__slides">
+                <div class="team-carousel__slide active">
+                    <img src="./Image/Team-1.png" alt="Team Member 1">
+                    <div class="team-carousel__info">
+                        <p class="team-carousel__subtitle">Команда</p>
+                        <h2 class="team-carousel__quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                        <p class="team-carousel__name">Олександр Олександровський</p>
+                        <p class="team-carousel__position">Керуючий партнер</p>
+                    </div>
+                </div>
+                <div class="team-carousel__slide">
+                    <img src="./Image/Team-4.png" alt="Team Member 2">
+                    <div class="team-carousel__info">
+                        <p class="team-carousel__subtitle"></p>
+                        <h2 class="team-carousel__quote"></h2>
+                        <p class="team-carousel__name"></p>
+                        <p class="team-carousel__position"></p>
+                    </div>
+                </div>
+                <div class="team-carousel__slide">
+                    <img src="./Image/Team-5.png" alt="Team Member 3">
+                    <div class="team-carousel__info">
+                        <p class="team-carousel__subtitle"></p>
+                        <h2 class="team-carousel__quote"></h2>
+                        <p class="team-carousel__name"></p>
+                        <p class="team-carousel__position"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-carousel__pagination">
+                <button class="team-carousel__dot" data-slide="0"></button>
+                <button class="team-carousel__dot" data-slide="1"></button>
+                <button class="team-carousel__dot" data-slide="2"></button>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="partners">
@@ -273,5 +300,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.team-carousel__slide');
+const dots = document.querySelectorAll('.team-carousel__dot');
+
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    const slideIndex = dot.getAttribute('data-slide');
+
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+
+    slides[slideIndex].classList.add('active');
+    dot.classList.add('active');
+  });
+});
+    </script>
   </body>
 </html>
