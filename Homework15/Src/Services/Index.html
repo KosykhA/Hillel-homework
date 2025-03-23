@@ -12,7 +12,7 @@
       <header class="header">
         <div class="container container-head">
           <div class="logo">
-            <span class="legal"><span class="h">h</span>legal</span>
+            <span class="legal"><span class="h">h</span>legal<span class="slash"> / </span>services</span>
             <div class="law-company">LAW COMPANY</div>
           </div>
 
@@ -37,81 +37,17 @@
 
         <nav class="nav container">
           <a href="#" class="about-us">about us</a>
-          <a href="#" class="servicess">services</a>
+          <a href="#" class="services">services</a>
           <a href="#" class="team">team</a>
           <a href="#" class="publications1">publications</a>
           <a href="#" class="contacts">contacts</a>
         </nav>
 
-        <div class="header-content">
-          <img src="./Image/Symbol.png" alt="Big H" class="big-h" />
-          <h1>you legal solutions provider</h1>
-          <div class="scroll-down">
-            <a href="#main-content">
-              <div class="circle">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5 7L10 12L15 7"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
       </header>
-
-      <section class="intro">
-        <div class="container intro-container">
-          <div class="intro-left">
-            <ul class="intro-list">
-              <li class="intro-item">
-                <a href="https://consistentcharacter.ai/" class="intro-link"
-                  >Consistent</a
-                >
-              </li>
-              <li class="intro-item">
-                <a
-                  href="https://www.zendesk.de/blog/customer-oriented-support/#"
-                  class="intro-link"
-                  >Customer oriented</a
-                >
-              </li>
-              <li class="intro-item">
-                <a href="https://inu.de/" class="intro-link">Innovative</a>
-              </li>
-              <li class="intro-item">
-                <a href="https://b-o-s.ch/" class="intro-link"
-                  >Business oriented</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="intro-divider"></div>
-          <div class="intro-right">
-            <h3>We turn the idea of legal services</h3>
-            <p>
-              Consolidating many years of experience and practice, the company's
-              lawyers accompany complex projects and achieve a number of
-              important decisions for the industry. Many of them form the
-              practice of applying the law of the sea in Ukraine.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section class="services-section">
         <div class="container">
-          <a href="" class="services-link">Services <span>&#10095;</span></a>
+          <a href="http://127.0.0.1:5500/Src/Home/Index.html#" class="services-link">Services <span>&#10095;</span></a>
           <h2 class="services-title">What can we do better than others?</h2>
           <div class="services-list">
             <div class="service-card">
@@ -257,6 +193,18 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        const langOptions = document.querySelectorAll(".lang-option");
+  
+        langOptions.forEach((option) => {
+          option.addEventListener("click", (e) => {
+            e.preventDefault();
+            langOptions.forEach((opt) => opt.classList.remove("active"));
+            option.classList.add("active");
+          });
+        });
+      </script>
 
     </body>
     </html>
